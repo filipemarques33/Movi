@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D49CE517207A4CA800C86DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE516207A4CA800C86DC6 /* AppDelegate.swift */; };
-		D49CE519207A4CA800C86DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE518207A4CA800C86DC6 /* ViewController.swift */; };
 		D49CE51C207A4CA800C86DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49CE51A207A4CA800C86DC6 /* Main.storyboard */; };
 		D49CE51F207A4CA800C86DC6 /* Movi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D49CE51D207A4CA800C86DC6 /* Movi.xcdatamodeld */; };
 		D49CE521207A4CAA00C86DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49CE520207A4CAA00C86DC6 /* Assets.xcassets */; };
@@ -17,12 +16,16 @@
 		D49CE530207A4DFD00C86DC6 /* AganèRegularSign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D49CE52D207A4DFB00C86DC6 /* AganèRegularSign.ttf */; };
 		D49CE531207A4DFD00C86DC6 /* AganèBoldSign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D49CE52E207A4DFC00C86DC6 /* AganèBoldSign.ttf */; };
 		D49CE533207A502500C86DC6 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE532207A502500C86DC6 /* ColorPalette.swift */; };
+		D49CE535207A5EDC00C86DC6 /* AtendimentosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE534207A5EDC00C86DC6 /* AtendimentosViewController.swift */; };
+		D49CE537207A5FD600C86DC6 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE536207A5FD600C86DC6 /* AppData.swift */; };
+		D49CE53D207A6CC800C86DC6 /* HistoricoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */; };
+		D49CE53F207A6D4A00C86DC6 /* HistoricoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */; };
+		D49CE541207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D49CE513207A4CA800C86DC6 /* Movi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49CE516207A4CA800C86DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D49CE518207A4CA800C86DC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D49CE51B207A4CA800C86DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D49CE51E207A4CA800C86DC6 /* Movi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movi.xcdatamodel; sourceTree = "<group>"; };
 		D49CE520207A4CAA00C86DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +35,11 @@
 		D49CE52D207A4DFB00C86DC6 /* AganèRegularSign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AganèRegularSign.ttf"; sourceTree = "<group>"; };
 		D49CE52E207A4DFC00C86DC6 /* AganèBoldSign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AganèBoldSign.ttf"; sourceTree = "<group>"; };
 		D49CE532207A502500C86DC6 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		D49CE534207A5EDC00C86DC6 /* AtendimentosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtendimentosViewController.swift; sourceTree = "<group>"; };
+		D49CE536207A5FD600C86DC6 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoricoCell.swift; path = ../HistoricoCell.swift; sourceTree = "<group>"; };
+		D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewController.swift; sourceTree = "<group>"; };
+		D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitacaoInfoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +72,19 @@
 		D49CE515207A4CA800C86DC6 /* Movi */ = {
 			isa = PBXGroup;
 			children = (
+				D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */,
 				D49CE516207A4CA800C86DC6 /* AppDelegate.swift */,
-				D49CE518207A4CA800C86DC6 /* ViewController.swift */,
 				D49CE532207A502500C86DC6 /* ColorPalette.swift */,
+				D49CE534207A5EDC00C86DC6 /* AtendimentosViewController.swift */,
+				D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */,
+				D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */,
 				D49CE51A207A4CA800C86DC6 /* Main.storyboard */,
 				D49CE520207A4CAA00C86DC6 /* Assets.xcassets */,
 				D49CE522207A4CAA00C86DC6 /* LaunchScreen.storyboard */,
 				D49CE525207A4CAA00C86DC6 /* Info.plist */,
 				D49CE52B207A4DDC00C86DC6 /* Fonts */,
 				D49CE51D207A4CA800C86DC6 /* Movi.xcdatamodeld */,
+				D49CE536207A5FD600C86DC6 /* AppData.swift */,
 			);
 			path = Movi;
 			sourceTree = "<group>";
@@ -161,10 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49CE519207A4CA800C86DC6 /* ViewController.swift in Sources */,
+				D49CE53D207A6CC800C86DC6 /* HistoricoCell.swift in Sources */,
+				D49CE541207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift in Sources */,
 				D49CE517207A4CA800C86DC6 /* AppDelegate.swift in Sources */,
+				D49CE53F207A6D4A00C86DC6 /* HistoricoTableViewController.swift in Sources */,
 				D49CE51F207A4CA800C86DC6 /* Movi.xcdatamodeld in Sources */,
+				D49CE535207A5EDC00C86DC6 /* AtendimentosViewController.swift in Sources */,
 				D49CE533207A502500C86DC6 /* ColorPalette.swift in Sources */,
+				D49CE537207A5FD600C86DC6 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
