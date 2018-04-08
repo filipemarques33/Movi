@@ -99,3 +99,10 @@ class Notificacao {
         self.type = type
     }
 }
+
+struct User {
+    static var userName = "Filipe Marques"
+    static var address = "Rua Luverci Pereira de Souza, 545"
+    static var email = "fi.marques33@gmail.com"
+    static var phoneNumber = "(19) 98747-6574"
+}
