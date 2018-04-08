@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224B126E207A76A8004060D5 /* ReclamacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B126D207A76A8004060D5 /* ReclamacoesViewController.swift */; };
+		224B1271207A8EFF004060D5 /* AtendimentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B126F207A8EFF004060D5 /* AtendimentoTableViewCell.swift */; };
+		224B1272207A8EFF004060D5 /* AtendimentoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B1270207A8EFF004060D5 /* AtendimentoTableViewCell.xib */; };
 		D49CE517207A4CA800C86DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE516207A4CA800C86DC6 /* AppDelegate.swift */; };
 		D49CE51C207A4CA800C86DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49CE51A207A4CA800C86DC6 /* Main.storyboard */; };
 		D49CE51F207A4CA800C86DC6 /* Movi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D49CE51D207A4CA800C86DC6 /* Movi.xcdatamodeld */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224B126D207A76A8004060D5 /* ReclamacoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReclamacoesViewController.swift; sourceTree = "<group>"; };
+		224B126F207A8EFF004060D5 /* AtendimentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtendimentoTableViewCell.swift; sourceTree = "<group>"; };
+		224B1270207A8EFF004060D5 /* AtendimentoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AtendimentoTableViewCell.xib; sourceTree = "<group>"; };
 		D49CE513207A4CA800C86DC6 /* Movi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49CE516207A4CA800C86DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D49CE51B207A4CA800C86DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 				D49CE534207A5EDC00C86DC6 /* AtendimentosViewController.swift */,
 				D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */,
 				D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */,
+				224B126D207A76A8004060D5 /* ReclamacoesViewController.swift */,
+				224B126F207A8EFF004060D5 /* AtendimentoTableViewCell.swift */,
+				224B1270207A8EFF004060D5 /* AtendimentoTableViewCell.xib */,
 				D49CE51A207A4CA800C86DC6 /* Main.storyboard */,
 				D49CE520207A4CAA00C86DC6 /* Assets.xcassets */,
 				D49CE522207A4CAA00C86DC6 /* LaunchScreen.storyboard */,
@@ -157,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224B1272207A8EFF004060D5 /* AtendimentoTableViewCell.xib in Resources */,
 				D49CE524207A4CAA00C86DC6 /* LaunchScreen.storyboard in Resources */,
 				D49CE521207A4CAA00C86DC6 /* Assets.xcassets in Resources */,
 				D49CE52F207A4DFD00C86DC6 /* AganèExtraBoldSign.ttf in Resources */,
@@ -178,8 +188,10 @@
 				D49CE517207A4CA800C86DC6 /* AppDelegate.swift in Sources */,
 				D49CE53F207A6D4A00C86DC6 /* HistoricoTableViewController.swift in Sources */,
 				D49CE51F207A4CA800C86DC6 /* Movi.xcdatamodeld in Sources */,
+				224B126E207A76A8004060D5 /* ReclamacoesViewController.swift in Sources */,
 				D49CE535207A5EDC00C86DC6 /* AtendimentosViewController.swift in Sources */,
 				D49CE533207A502500C86DC6 /* ColorPalette.swift in Sources */,
+				224B1271207A8EFF004060D5 /* AtendimentoTableViewCell.swift in Sources */,
 				D49CE537207A5FD600C86DC6 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WW6YH2P93;
+				DEVELOPMENT_TEAM = D7J47JG8UC;
 				INFOPLIST_FILE = Movi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WW6YH2P93;
+				DEVELOPMENT_TEAM = D7J47JG8UC;
 				INFOPLIST_FILE = Movi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
