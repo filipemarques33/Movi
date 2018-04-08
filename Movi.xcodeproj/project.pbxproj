@@ -21,6 +21,8 @@
 		D49CE53D207A6CC800C86DC6 /* HistoricoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */; };
 		D49CE53F207A6D4A00C86DC6 /* HistoricoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */; };
 		D49CE541207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */; };
+		D49CE549207A816500C86DC6 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE548207A816500C86DC6 /* NotificationCell.swift */; };
+		D49CE54D207A82AA00C86DC6 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE54C207A82AA00C86DC6 /* NotificationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoricoCell.swift; path = ../HistoricoCell.swift; sourceTree = "<group>"; };
 		D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewController.swift; sourceTree = "<group>"; };
 		D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitacaoInfoTableViewController.swift; sourceTree = "<group>"; };
+		D49CE548207A816500C86DC6 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		D49CE54C207A82AA00C86DC6 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +77,13 @@
 			isa = PBXGroup;
 			children = (
 				D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */,
+				D49CE548207A816500C86DC6 /* NotificationCell.swift */,
 				D49CE516207A4CA800C86DC6 /* AppDelegate.swift */,
 				D49CE532207A502500C86DC6 /* ColorPalette.swift */,
 				D49CE534207A5EDC00C86DC6 /* AtendimentosViewController.swift */,
 				D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */,
 				D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */,
+				D49CE54C207A82AA00C86DC6 /* NotificationTableViewController.swift */,
 				D49CE51A207A4CA800C86DC6 /* Main.storyboard */,
 				D49CE520207A4CAA00C86DC6 /* Assets.xcassets */,
 				D49CE522207A4CAA00C86DC6 /* LaunchScreen.storyboard */,
@@ -173,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49CE54D207A82AA00C86DC6 /* NotificationTableViewController.swift in Sources */,
 				D49CE53D207A6CC800C86DC6 /* HistoricoCell.swift in Sources */,
+				D49CE549207A816500C86DC6 /* NotificationCell.swift in Sources */,
 				D49CE541207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift in Sources */,
 				D49CE517207A4CA800C86DC6 /* AppDelegate.swift in Sources */,
 				D49CE53F207A6D4A00C86DC6 /* HistoricoTableViewController.swift in Sources */,

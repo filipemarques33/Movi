@@ -1,5 +1,5 @@
 //
-//  HistoricoTableViewController.swift
+//  NotificationTableViewController.swift
 //  Movi
 //
 //  Created by Filipe Marques on 08/04/18.
@@ -8,21 +8,16 @@
 
 import UIKit
 
-class HistoricoTableViewController: UITableViewController {
+class NotificationTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -34,43 +29,26 @@ class HistoricoTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return AppData.history.count
+        return AppData.notifications.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let itemHistorico = AppData.history[indexPath.row]
+        let notification = AppData.notifications[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "historicoCell", for: indexPath) as! HistoricoCell
-        cell.cellTitle.text = itemHistorico.categoria
-        cell.cellDescription.text = itemHistorico.statusDesc
+        let cell = tableView.dequeueReusableCell(withIdentifier: "notificationCell", for: indexPath) as! NotificationCell
         
-        switch itemHistorico.status {
-        case StatusSolicitacao.solved:
-            cell.cellStatusView.backgroundColor = UIColor.green
-        case StatusSolicitacao.inProgress:
-            cell.cellStatusView.backgroundColor = UIColor.yellow
-        case StatusSolicitacao.denied:
-            cell.cellStatusView.backgroundColor = UIColor.red
+        cell.cellTitle.text = notification.title
+        cell.cellDescription.text = notification.text
+        switch notification.type {
+        case TipoNotificacao.onibus:
+            cell.cellImage.image = UIImage(named:"Onibus_Notificacao")
+        case TipoNotificacao.status:
+            cell.cellImage.image = UIImage(named:"Status_Notificacao")
         }
         
-        cell.cellStatusView.layer.cornerRadius = cell.cellStatusView.frame.height/2
-
         return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToInfoSolicitacao" {
-            let dest = segue.destination as! SolicitacaoInfoTableViewController
-            let indexPath = self.tableView.indexPathForSelectedRow!
-            dest.solicitacao = AppData.history[indexPath.row]
-            
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "segueToInfoSolicitacao", sender: self)
     }
 
     /*

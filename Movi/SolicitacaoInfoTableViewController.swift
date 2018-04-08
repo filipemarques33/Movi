@@ -31,23 +31,114 @@ class SolicitacaoInfoTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        switch solicitacao.tipo {
+        case TipoSolicitacao.complete, TipoSolicitacao.short:
+            return 3
+        case TipoSolicitacao.textBox:
+            return 2
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        if section == 0 {
+            return 1
+        } else if section == 2 {
+            return 1
+        } else {
+            switch solicitacao.tipo {
+            case TipoSolicitacao.complete:
+                return 5
+            case TipoSolicitacao.short:
+                return 2
+            case TipoSolicitacao.textBox:
+                return 1
+            }
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "historicoCell", for: indexPath) as! HistoricoCell
+            cell.cellTitle.text = solicitacao.categoria
+            cell.cellDescription.text = solicitacao.statusDesc
+            
+            cell.accessoryType = .none
+            
+            switch solicitacao.status {
+            case StatusSolicitacao.solved:
+                cell.cellStatusView.backgroundColor = UIColor.green
+            case StatusSolicitacao.inProgress:
+                cell.cellStatusView.backgroundColor = UIColor.yellow
+            case StatusSolicitacao.denied:
+                cell.cellStatusView.backgroundColor = UIColor.red
+            }
+            
+            cell.cellStatusView.layer.cornerRadius = cell.cellStatusView.frame.height/2
+            
+            return cell
+        } else if indexPath.section == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath)
+            cell.textLabel?.text = solicitacao.informacoes
+            return cell
+        } else {
+            switch solicitacao.tipo {
+            case TipoSolicitacao.complete:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
+                
+                if indexPath.row == 0 {
+                    cell.textLabel?.text = solicitacao.protocolo
+                    cell.detailTextLabel?.text = "Protocolo"
+                } else if indexPath.row == 1 {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+                    
+                    cell.textLabel?.text = dateFormatter.string(from: solicitacao.data!)
+                    
+                    cell.detailTextLabel?.text = "Data e Hora"
+                } else if indexPath.row == 2 {
+                    cell.textLabel?.text = solicitacao.linha
+                    cell.detailTextLabel?.text = "Linha"
+                } else if indexPath.row == 3 {
+                    cell.textLabel?.text = solicitacao.prefixo
+                    cell.detailTextLabel?.text = "Prefixo"
+                } else if indexPath.row == 4 {
+                    cell.textLabel?.text = solicitacao.local
+                    cell.detailTextLabel?.text = "Local"
+                }
+                return cell
+            case TipoSolicitacao.short:
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
+                
+                if indexPath.row == 0 {
+                    cell.textLabel?.text = solicitacao.protocolo
+                    cell.detailTextLabel?.text = "Protocolo"
+                } else if indexPath.row == 1 {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "dd/MM/yyyy"
+                    
+                    cell.textLabel?.text = dateFormatter.string(from: solicitacao.data!)
+                    
+                    cell.detailTextLabel?.text = "Data e Hora"
+                }
+                return cell
+            case TipoSolicitacao.textBox:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath)
+                cell.textLabel?.text = solicitacao.informacoes
+                return cell
+            default:
+                return UITableViewCell()
+            }
+        }
+    
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 
     /*
     // Override to support conditional editing of the table view.
