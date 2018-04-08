@@ -25,6 +25,8 @@
 		D49CE54D207A82AA00C86DC6 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE54C207A82AA00C86DC6 /* NotificationTableViewController.swift */; };
 		D49CE54F207A864500C86DC6 /* UsuarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE54E207A864500C86DC6 /* UsuarioTableViewController.swift */; };
 		D49CE551207A88D600C86DC6 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE550207A88D600C86DC6 /* UserCell.swift */; };
+		D49CE553207A907D00C86DC6 /* LinhasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE552207A907D00C86DC6 /* LinhasTableViewController.swift */; };
+		D49CE555207A93AC00C86DC6 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49CE554207A93AC00C86DC6 /* TextCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		D49CE54C207A82AA00C86DC6 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		D49CE54E207A864500C86DC6 /* UsuarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioTableViewController.swift; sourceTree = "<group>"; };
 		D49CE550207A88D600C86DC6 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		D49CE552207A907D00C86DC6 /* LinhasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinhasTableViewController.swift; sourceTree = "<group>"; };
+		D49CE554207A93AC00C86DC6 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,23 +84,25 @@
 		D49CE515207A4CA800C86DC6 /* Movi */ = {
 			isa = PBXGroup;
 			children = (
+				D49CE516207A4CA800C86DC6 /* AppDelegate.swift */,
+				D49CE536207A5FD600C86DC6 /* AppData.swift */,
 				D49CE53C207A6CC800C86DC6 /* HistoricoCell.swift */,
 				D49CE548207A816500C86DC6 /* NotificationCell.swift */,
 				D49CE550207A88D600C86DC6 /* UserCell.swift */,
-				D49CE516207A4CA800C86DC6 /* AppDelegate.swift */,
+				D49CE554207A93AC00C86DC6 /* TextCell.swift */,
 				D49CE532207A502500C86DC6 /* ColorPalette.swift */,
 				D49CE534207A5EDC00C86DC6 /* AtendimentosViewController.swift */,
 				D49CE53E207A6D4900C86DC6 /* HistoricoTableViewController.swift */,
 				D49CE540207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift */,
 				D49CE54C207A82AA00C86DC6 /* NotificationTableViewController.swift */,
 				D49CE54E207A864500C86DC6 /* UsuarioTableViewController.swift */,
+				D49CE552207A907D00C86DC6 /* LinhasTableViewController.swift */,
 				D49CE51A207A4CA800C86DC6 /* Main.storyboard */,
-				D49CE520207A4CAA00C86DC6 /* Assets.xcassets */,
 				D49CE522207A4CAA00C86DC6 /* LaunchScreen.storyboard */,
+				D49CE520207A4CAA00C86DC6 /* Assets.xcassets */,
 				D49CE525207A4CAA00C86DC6 /* Info.plist */,
 				D49CE52B207A4DDC00C86DC6 /* Fonts */,
 				D49CE51D207A4CA800C86DC6 /* Movi.xcdatamodeld */,
-				D49CE536207A5FD600C86DC6 /* AppData.swift */,
 			);
 			path = Movi;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 				D49CE541207A70DD00C86DC6 /* SolicitacaoInfoTableViewController.swift in Sources */,
 				D49CE517207A4CA800C86DC6 /* AppDelegate.swift in Sources */,
 				D49CE53F207A6D4A00C86DC6 /* HistoricoTableViewController.swift in Sources */,
+				D49CE553207A907D00C86DC6 /* LinhasTableViewController.swift in Sources */,
 				D49CE51F207A4CA800C86DC6 /* Movi.xcdatamodeld in Sources */,
 				D49CE535207A5EDC00C86DC6 /* AtendimentosViewController.swift in Sources */,
 				D49CE551207A88D600C86DC6 /* UserCell.swift in Sources */,
+				D49CE555207A93AC00C86DC6 /* TextCell.swift in Sources */,
 				D49CE54F207A864500C86DC6 /* UsuarioTableViewController.swift in Sources */,
 				D49CE533207A502500C86DC6 /* ColorPalette.swift in Sources */,
 				D49CE537207A5FD600C86DC6 /* AppData.swift in Sources */,

@@ -37,8 +37,8 @@ class AppData {
     static var history:[Solicitacao] =
         [Solicitacao(protocolo: "7522890", categoria: "Superlotação", status: StatusSolicitacao.inProgress, statusDesc: "Solicitação em análise", tipo: TipoSolicitacao.complete, data: "2018-04-08 10:05", local: "Rua Roxo Moreira, 280", linha: "121", prefixo: "1997", informacoes: "Tinha cerca de 500 pessoas no ônibus, sem condições."),
          Solicitacao(protocolo: "1651747", categoria: "Sinalização de Pontos", status: StatusSolicitacao.inProgress, statusDesc: "Solicitação Recebida", tipo: TipoSolicitacao.short, data: "2018-04-08" + " " + "00:00", local: "Rua Luverci Pereira de Souza, 280", linha: nil, prefixo: nil, informacoes: "A placa está encoberta por uma árvore."),
-         Solicitacao(protocolo: "2045585", categoria: "Má Conservação da Via", status: StatusSolicitacao.denied, statusDesc: "Solicitação negada por falta de informações", tipo: TipoSolicitacao.short, data: "2018-03-05" + " " + "00:00", local: "Rua Albertina de Jesus Martins, 100", linha: nil, prefixo: nil, informacoes: "Vários buracos meu"),
-         Solicitacao(protocolo: "8078395", categoria: "Credencial de Idoso", status: StatusSolicitacao.solved, statusDesc: "Solicitação em processo", tipo: TipoSolicitacao.textBox, data: nil, local: nil, linha: nil, prefixo: nil, informacoes: "Meu cartão quebrou. Como devo proceder?")]
+         Solicitacao(protocolo: "2045585", categoria: "Má Conservação da Via", status: StatusSolicitacao.denied, statusDesc: "Solicitação negada por falta de informações", tipo: TipoSolicitacao.short, data: "2018-03-05" + " " + "00:00", local: "Rua Albertina de Jesus Martins, 100", linha: nil, prefixo: nil, informacoes: "Vários buracos."),
+         Solicitacao(protocolo: "8078395", categoria: "Credencial de Idoso", status: StatusSolicitacao.solved, statusDesc: "Solicitação finalizada", tipo: TipoSolicitacao.textBox, data: nil, local: nil, linha: nil, prefixo: nil, informacoes: "Acabei de fazer 60 anos e gostaria de saber de forma fácil como conseguiria tirar minha credencial de idoso. Não consegui encontrar através do site!")]
     
     static var notifications:[Notificacao] = [
         Notificacao(title: "Linha 331", text: "Devido ao show do U2 no dia 23/05, o itinerário desta linha foi alterado.", type: TipoNotificacao.onibus),
@@ -105,4 +105,17 @@ struct User {
     static var address = "Rua Luverci Pereira de Souza, 545"
     static var email = "fi.marques33@gmail.com"
     static var phoneNumber = "(19) 98747-6574"
+    static var lines = [
+        Line(number: "332", terminals: "Rodoviária - Hospital das Clínicas"),
+        Line(number: "329", terminals: "Terminal Barão Geraldo - Cidade Judiciária"),
+        Line(number: "122", terminals: "Terminal Vida Nova - Campinas Shopping"),
+        Line(number: "351", terminals: "Corredor Central - Jardim Primavera/PUCC"),
+        Line(number: "430", terminals: "Terminal Central - Swiss Park"),
+    ]
+    
+}
+
+struct Line {
+    var number:String
+    var terminals:String
 }

@@ -80,8 +80,8 @@ class SolicitacaoInfoTableViewController: UITableViewController {
             
             return cell
         } else if indexPath.section == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath)
-            cell.textLabel?.text = solicitacao.informacoes
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath) as! TextCell
+            cell.longText.text = solicitacao.informacoes
             return cell
         } else {
             switch solicitacao.tipo {
@@ -126,8 +126,8 @@ class SolicitacaoInfoTableViewController: UITableViewController {
                 }
                 return cell
             case TipoSolicitacao.textBox:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath)
-                cell.textLabel?.text = solicitacao.informacoes
+                let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath) as! TextCell
+                cell.longText.text = solicitacao.informacoes
                 return cell
             default:
                 return UITableViewCell()
