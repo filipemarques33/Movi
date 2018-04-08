@@ -63,9 +63,14 @@ class HistoricoTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToInfoSolicitacao" {
             let dest = segue.destination as! SolicitacaoInfoTableViewController
-            
+            let indexPath = self.tableView.indexPathForSelectedRow!
+            dest.solicitacao = AppData.history[indexPath.row]
             
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueToInfoSolicitacao", sender: self)
     }
 
     /*
