@@ -23,11 +23,6 @@ class AtendimentosViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController!.navigationBar.setBackgroundImage(nil, for: .default)
-        self.navigationController!.navigationBar.setBackgroundImage(nil, for: .compact)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

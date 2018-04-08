@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,9 +34,6 @@
                                     <constraint firstAttribute="width" secondItem="h2o-Fw-pEF" secondAttribute="height" multiplier="125:82" id="ALu-u4-PjA"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Card_Reclamacao"/>
-                                <connections>
-                                    <segue destination="jhT-70-9Oj" kind="show" id="Rlt-TI-B9l"/>
-                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UW-6y-JGE">
                                 <rect key="frame" x="20" y="260" width="335" height="161"/>
@@ -167,66 +163,6 @@
             </objects>
             <point key="canvasLocation" x="1308" y="859.52023988005999"/>
         </scene>
-        <!--Reclamacoes View Controller-->
-        <scene sceneID="1di-5T-oZe">
-            <objects>
-                <viewController storyboardIdentifier="reclamacoes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jhT-70-9Oj" customClass="ReclamacoesViewController" customModule="Movi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uNS-vF-KKN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-rZ-njz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_Reclamacao" translatesAutoresizingMaskIntoConstraints="NO" id="GNS-JJ-TPa">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre o que seria sua reclamação?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dr-eK-ePJ" userLabel="Sobre">
-                                        <rect key="frame" x="40" y="24" width="219.5" height="74"/>
-                                        <fontDescription key="fontDescription" name="AganS55" family="Aganè S" pointSize="26"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="4Dr-eK-ePJ" firstAttribute="top" secondItem="eDb-rZ-njz" secondAttribute="top" constant="24" id="0gA-eb-mmy"/>
-                                    <constraint firstItem="GNS-JJ-TPa" firstAttribute="centerY" secondItem="eDb-rZ-njz" secondAttribute="centerY" id="5OM-5H-Eig"/>
-                                    <constraint firstItem="GNS-JJ-TPa" firstAttribute="centerX" secondItem="eDb-rZ-njz" secondAttribute="centerX" id="Fzv-b6-1K0"/>
-                                    <constraint firstItem="GNS-JJ-TPa" firstAttribute="height" secondItem="eDb-rZ-njz" secondAttribute="height" id="IdB-Ir-OAP"/>
-                                    <constraint firstItem="4Dr-eK-ePJ" firstAttribute="leading" secondItem="eDb-rZ-njz" secondAttribute="leading" constant="40" id="J2T-Y4-Kyd"/>
-                                    <constraint firstAttribute="height" constant="118" id="PMr-Ut-NVQ"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Dr-eK-ePJ" secondAttribute="trailing" constant="100" id="TGR-8y-3MH"/>
-                                    <constraint firstItem="GNS-JJ-TPa" firstAttribute="width" secondItem="eDb-rZ-njz" secondAttribute="width" id="n5P-UD-Swj"/>
-                                    <constraint firstAttribute="bottom" secondItem="4Dr-eK-ePJ" secondAttribute="bottom" constant="20" id="oO2-Xv-BnV"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgh-TU-NLN">
-                                <rect key="frame" x="37.5" y="82" width="300" height="462"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="462" id="zhy-h9-WTT"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="eDb-rZ-njz" firstAttribute="centerX" secondItem="dgO-fN-Xco" secondAttribute="centerX" id="27H-KG-0aC"/>
-                            <constraint firstItem="eDb-rZ-njz" firstAttribute="top" secondItem="dgO-fN-Xco" secondAttribute="top" id="4wd-lq-Qlu"/>
-                            <constraint firstItem="vgh-TU-NLN" firstAttribute="width" secondItem="uNS-vF-KKN" secondAttribute="width" multiplier="0.8" id="Ar9-VW-AZH"/>
-                            <constraint firstItem="vgh-TU-NLN" firstAttribute="centerX" secondItem="dgO-fN-Xco" secondAttribute="centerX" id="Yxv-yd-ub0"/>
-                            <constraint firstItem="dgO-fN-Xco" firstAttribute="bottom" secondItem="vgh-TU-NLN" secondAttribute="bottom" constant="10" id="fjB-PM-rpI"/>
-                            <constraint firstItem="eDb-rZ-njz" firstAttribute="width" secondItem="uNS-vF-KKN" secondAttribute="width" id="jDM-UY-wAC"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="dgO-fN-Xco"/>
-                    </view>
-                    <connections>
-                        <outlet property="containerView" destination="vgh-TU-NLN" id="FUB-Se-lag"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VvA-v7-824" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="397.60000000000002" y="1618.7406296851575"/>
-        </scene>
         <!--Table View Controller-->
         <scene sceneID="O4l-CF-7a7">
             <objects>
@@ -253,7 +189,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jb-FH-aWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="1619"/>
+            <point key="canvasLocation" x="1308" y="1576"/>
         </scene>
         <!--AHistórico-->
         <scene sceneID="QOP-Zt-7fS">
